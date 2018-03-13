@@ -20,7 +20,7 @@ class Preview(object):
         self.camera.set(4, 480)
         self.photo_name = ''
         "your path "
-        self.__path = '*********'
+        self.__path = 'C:/Users/ivan/Downloads/Door_final-master/Door_final-master/'
         self.photo_success = False
         self.history_photoname = []
         #config to take photo
@@ -41,6 +41,8 @@ class Preview(object):
                     if self.take_photo:
                         date = datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%ms')
                         self.photo_name = self.__path + date + '.jpg'
+                        print self.photo_name
+                        print 123
                         self.history_photoname.append(self.photo_name)
                         cv.imwrite(self.photo_name, frame)
                         self.photo_success = True

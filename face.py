@@ -8,11 +8,11 @@ from aip import AipFace
 class Face_id(object):
     def __init__(self):
         "your baidu ai APP_ID"
-        self.APP_ID = '********'
+        self.APP_ID = '10773679'
         "your baidu ai API_KEY"
-        self.API_KEY = '***************'
+        self.API_KEY = 'R3kfoOgffSY9wvAl3HasViwT'
         "your baidu ai SECRET_KEY"
-        self.SECRET_KEY = '*******************'
+        self.SECRET_KEY = 'z6voKotPuyCQR2X0XEvq6FDQv7XrfRUP'
         self.aipFace = AipFace(self.APP_ID,self.API_KEY,self.SECRET_KEY)
         self.photo_name = ''
         self.group = 'Door'
